@@ -1,0 +1,91 @@
+/* Reset and basic styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Main container for the 'How it works' section */
+.how-it-works {
+  text-align: center;
+  /* padding-top: 50px;  */
+  background-image: url("../../assets/image/bg-transparent6.png"); /* Adjust this to match your actual image path */
+  background-size: cover;
+  background-position: center;
+  height: 300px; /* Adjust the height for the background image behind the title */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff; /* White color for the title */
+}
+
+/* Title (h1) */
+.how-it-works h1 {
+  font-size: 3.5rem;
+  color: #2c3e50;
+  font-weight: bold;
+  z-index: 2;
+  margin: 0;
+}
+
+/* Section content container */
+.description_Wrapper {
+  max-width: 900px; /* Controls the width of the content */
+  margin: 50px auto; /* Centers the content */
+  padding: 20px;
+}
+
+/* Section heading (h3) styles */
+.description_Wrapper h3 {
+  font-size: 24px;
+  color: #2c3e50;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+/* Paragraph styling */
+.description_Wrapper p {
+  font-size: 16px;
+  color: #7f8c8d;
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+/* List styling */
+.description_Wrapper ul {
+  list-style-type: disc;
+  padding-left: 40px;
+  margin-bottom: 20px;
+}
+
+.description_Wrapper ul li {
+  font-size: 16px;
+  color: #7f8c8d;
+  margin-bottom: 10px;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+  .how-it-works {
+    height: auto;
+    padding: 20px 15px;
+  }
+
+  .how-it-works h1 {
+    font-size: 2.5rem;
+  }
+
+  .description_Wrapper h3 {
+    font-size: 20px;
+  }
+
+  .description_Wrapper p,
+  .description_Wrapper ul li {
+    font-size: 14px;
+  }
+
+  .description_Wrapper {
+    padding: 15px;
+  }
+}

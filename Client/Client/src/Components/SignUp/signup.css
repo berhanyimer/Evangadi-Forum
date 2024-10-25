@@ -1,0 +1,167 @@
+/* Global styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Container for the whole sign-up page */
+.SignUpContainer {
+  justify-content: center;
+  min-height: 67vh;
+  background-color: #f9f9f9;
+  padding: 20px;
+  display: flex;
+  /* justify-content: space-between; */
+  /* align-items: center; */
+  /* padding: 100px 80px; */
+  padding-left: 100px;
+  margin-top: 10px;
+  background-image: url("../../assets/image//background-home-img.svg");
+  background-size: cover;
+  background-position: left top;
+  background-repeat: no-repeat;
+}
+
+.form-section {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 40%;
+  margin-bottom: 20px; /* Add some margin to avoid overlap when stacked */
+}
+
+.info-section {
+  width: 45%;
+  padding-left: 40px;
+  display: block; /* Ensure the info section is displayed */
+}
+
+.header {
+  font-size: 24px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.firstAlreadyhaveAcc,
+.already-account {
+  margin-bottom: 15px;
+  font-size: 14px;
+  text-align: center;
+}
+
+.SignupForm input {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.fullName {
+  display: flex;
+  gap: 10px;
+}
+
+.password-container {
+  position: relative;
+}
+
+.password-toggle-icon {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #ff9933;
+}
+
+.btnJoin {
+  width: 100%;
+  background-color: #3366ff;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btnJoin:hover {
+  background-color: #254eda;
+}
+
+.info-section h2 {
+  font-size: 22px;
+  color: #2c2c2c;
+}
+
+.info-section p {
+  margin-bottom: 20px;
+  color: #4a4a4a;
+}
+
+small a {
+  color: #ff9933;
+  text-decoration: none;
+}
+.agree-to-join {
+  text-align: center;
+  margin: 20px 0;
+}
+.how-it-works-btn {
+  display: inline-block;
+  background-color: #ff9933;
+  color: white;
+  padding: 12px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.how-it-works-btn:hover {
+  background-color: #e68a00;
+}
+
+.signin-link {
+  color: #ff9933;
+  text-decoration: none;
+}
+
+.signin-link:hover {
+  text-decoration: underline;
+}
+
+.signin-link p {
+  color: #ff9933;
+}
+.abt {
+  color: #ff9933;
+}
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+  .SignUpContainer {
+    flex-direction: column; /* Stack form and info vertically */
+    padding: 20px;
+  }
+
+  .form-section {
+    width: 100%;
+    margin-bottom: 20px; /* Add space between form and info-section */
+  }
+
+  .info-section {
+    width: 100%;
+    padding-left: 0;
+  }
+
+  .fullName {
+    flex-direction: column; /* Stack first and last name inputs vertically */
+  }
+
+  .password-toggle-icon {
+    right: 5px; /* Adjust position on smaller screens */
+  }
+}

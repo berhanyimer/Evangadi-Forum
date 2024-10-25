@@ -1,0 +1,211 @@
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Poppins, sans-serif;
+}
+
+/* body {
+  font-family: 'Poppins', sans-serif;
+  background-color: white;
+} */
+
+.homeContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 80px;
+  min-height: 80vh;
+}
+
+.homePage {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 100px 80px;
+  /* height:100vh; */
+  background-image: url("../../assets/image//background-home-img.svg");
+  background-size: cover;
+  background-position: left top;
+  background-repeat: no-repeat;
+}
+
+.textContent {
+  max-width: 50%;
+  padding-right: 50px;
+}
+
+.textContent h2 {
+  font-size: 4rem;
+  color: #1f1a15;
+  font-weight: 700;
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+.textContent p {
+  font-size: 1.2rem;
+  color: #555;
+  line-height: 1.8;
+  margin-bottom: 30px;
+}
+
+.joinBtn {
+  background: linear-gradient(to right, #f97316, #f86d38);
+  color: white;
+  padding: 15px 40px;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 50px;
+  border: none;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: all 0.3s ease; /* Smooth transitions for all properties */
+  box-shadow: 0 5px 15px rgba(249, 115, 22, 0.4); /* Soft shadow for depth */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Subtle text shadow */
+}
+
+.joinBtn:hover {
+  background: linear-gradient(to right, #f86d38, #f97316);
+  transform: scale(1.05); /* Slightly enlarge the button on hover */
+  box-shadow: 0 8px 20px rgba(249, 115, 22, 0.6); /* Intensify shadow on hover */
+}
+
+.joinBtn:active {
+  transform: scale(0.98); /* Slight shrink on click for effect */
+  box-shadow: 0 3px 10px rgba(249, 115, 22, 0.4); /* Reduce shadow on click */
+}
+
+
+.imageContent {
+  flex: 1;
+  text-align: right;
+}
+
+.chattingImage {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+}
+
+/* Footer styles */
+.footer {
+  background-color: #333;
+  color: white;
+  padding: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.footer .logo img {
+  width: 150px;
+}
+
+.footer .links {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer .links a {
+  color: white;
+  text-decoration: none;
+  margin-bottom: 10px;
+}
+
+.footer .links a:hover {
+  color: #f97316;
+}
+
+.footer .contact {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer .contact p {
+  margin: 0;
+}
+
+.footer .social-icons {
+  display: flex;
+  gap: 20px;
+}
+
+.social-icons a {
+  color: white;
+  font-size: 20px;
+}
+
+.social-icons a:hover {
+  color: #f97316;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .homePage {
+    flex-direction: column;
+    text-align: center;
+    background-position: center top;
+    padding: 50px 20px; /* Reduce padding for mobile */
+  }
+
+  .textContent {
+    max-width: 100%;
+    padding-right: 0;
+    margin-bottom: 30px;
+  }
+
+  .textContent h2 {
+    font-size: 2.5rem; /* Reduce size for mobile */
+  }
+
+  .textContent p {
+    font-size: 1rem;
+    padding: 0 20px; /* Add padding for better alignment */
+  }
+
+  .joinBtn {
+    margin: 0 auto; /* Center the button */
+  }
+
+  .imageContent {
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .chattingImage {
+    max-width: 80%; /* Reduce image size for smaller screens */
+    height: auto;
+    display: none;
+  }
+
+  .footer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer .links, .footer .contact {
+    text-align: center;
+  }
+
+  .footer .social-icons {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .textContent h2 {
+    font-size: 2rem; /* Further reduce size for very small screens */
+  }
+
+  .textContent p {
+    font-size: 0.9rem;
+  }
+
+  .joinBtn {
+    padding: 12px 30px;
+    font-size: 0.9rem;
+  }
+}

@@ -1,0 +1,104 @@
+/* General container for the entire question list */
+
+.question-list-container {
+  width: 100%;
+  margin: 0, auto;
+  padding: 100px;
+  background-color: #f9f9f9;
+}
+
+/* Top bar with "Ask Question" and welcome message */
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.ask-question-btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  width: auto;
+  margin-left: 65px;
+}
+
+.welcome-message {
+  font-size: 16px;
+  text-align: end;
+  width: 30%;
+  margin-right: 90px;
+}
+
+.username {
+  color: #ff5c5e;
+}
+
+/* Search bar styling */
+.search-bar input {
+  width: 85%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  margin-left: 60px;
+}
+
+/* Styling each question item */
+.question-items {
+  display: flex;
+  flex-direction: column;
+  padding: 0 100px;
+  width: 100%;
+}
+
+.question-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #e6e6e6;
+  padding: 15px 0;
+  cursor: pointer;
+}
+
+.user-icon {
+  font-size: 40px;
+  color: #0056b3;
+  margin-right: 20px;
+}
+
+.question-content {
+  flex: 1;
+}
+.user {
+  display: flex;
+  flex-direction: column;
+  width: 30px;
+}
+.question-title {
+  font-size: 16px;
+  margin-bottom: 5px;
+  color: black;
+  text-align: left;
+  padding-left: 50px;
+ 
+}
+.question-content .question-title p {
+ list-style-type: none;
+ text-decoration: none;
+}
+
+.question-author {
+  color: #666;
+  font-size: 14px;
+  text-align: left;
+  width: auto;
+}
+
+.arrow-icon {
+  font-size: 24px;
+  color: #0056b3;
+}
